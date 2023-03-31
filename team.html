@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Unspoken Fam</title>
+    <link rel="stylesheet" href="team.css">
+    <script src="team.js"></script>
+</head>
+<header>
+    
+    <img class ="logo" src="content/IMG_5704.png" alt="logo"></div>
+    <!-- <div class="toggle">
+
+    </div> -->
+
+<div class="menu">
+<ul>
+    <li><a href="Index.html">HOME</a></li>
+    <li><a href="">ABOUT US</a></li>
+    <li><a href="#">PROJECTS</a></li>
+    <li><a href="#">UPCOMING PROJECTS</a></li>
+    <li><a href="#">MEET THE ACTORS</a></li>
+    <li><a href="team.html">THE UNSPOKEN FAM</a></li>
+    <li><a href="src/contact.html">WORK WITH US</a></li>
+</ul>
+</div>
+</header>
+<body>
+    <div class="team-members">
+        <div class="member-card" onclick="openModal('member1')">
+          <img src="member1-image.jpg" alt="Member 1">
+          <h3>Member 1</h3>
+          <p>Summary of Member 1</p>
+        </div>
+        <div class="member-card" onclick="openModal('member2')">
+          <img src="member2-image.jpg" alt="Member 2">
+          <h3>Member 2</h3>
+          <p>Summary of Member 2</p>
+        </div>
+        <div class="member-card" onclick="openModal('member3')">
+          <img src="member3-image.jpg" alt="Member 3">
+          <h3>Member 3</h3>
+          <p>Summary of Member 3</p>
+        </div>
+      </div>
+      
+      <!-- Modal for displaying full details of a team member -->
+      <div id="member-modal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <div id="member-details"></div>
+        </div>
+      </div>
+      
+<script src="team.js"></script>
+</body>
+</html>

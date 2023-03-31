@@ -1,0 +1,65 @@
+.team-members {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.member-card {
+  width: 30%;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.member-card img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 800px;
+  position: relative;
+}
+
+.modal-content .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 28px;
+  font-weight: bold;
+  color: #aaa;
+  padding: 5px;
+}
+
+/* Media query for responsive layout */
+@media screen and (max-width: 768px) {
+  .member-card {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .member-card {
+    width: 100%;
+  }
+}
